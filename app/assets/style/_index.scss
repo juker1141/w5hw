@@ -1,0 +1,26 @@
+main{
+  width: 76.875%;
+}
+.main_header{
+  padding: 32px;
+  font-weight: bold;
+  a{
+    color: #000;
+  }
+  &_title{
+    font-size: 24px;
+    line-height: 33px;
+    padding-right: 48px;
+  }
+  &_select span{
+    color: #2A8356;
+  }
+  .search{
+    margin-right: 26px;
+    input{
+      margin-right: 16px;
+      padding-left: 5px;
+      display: none;
+    }
+  }
+}

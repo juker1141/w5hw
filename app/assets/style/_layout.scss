@@ -1,0 +1,47 @@
+
+.l_aside{
+  background: #EDF4EE;
+  width: 23.125%;
+  height: 100%;
+  padding: 0;
+  padding-top: 32px;
+  font-weight: bold;
+  .logo_img{
+    background: url(../images/logo.svg) no-repeat;
+    @include hide-text;
+    width: 151px;
+    height: 40px;
+    margin: 0 32px 32px 32px;
+  }
+  .l_menu{
+    list-style: none;
+    li{
+      padding-bottom: 24px;
+      a{
+        color: #000;
+      }
+      a:hover{
+        color: #2A8356;
+        border-left: 3px solid #2A8356;
+      }
+    }
+    span{
+      margin-right: 16px;
+      margin-left: 32px;
+    }
+  }
+}
+.account{
+  padding: 97% 32px 32px 32px;
+  img{
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+  }
+  &_user_email{
+    font-size: 14px;
+    line-height: 24px;
+    color: #0000009A;
+    font-weight: normal;
+  }
+}

@@ -1,0 +1,32 @@
+
+.l-aside{
+  background: #EDF4EE;
+  width: 23.125%;
+  padding: 0;
+  padding-top: 32px;
+  .logo_img{
+    background: url(../images/logo.svg) no-repeat;
+    @include hide-text;
+    width: 151px;
+    height: 40px;
+    margin: 0 32px 32px 32px;
+  }
+  .l-menu{
+    list-style: none;
+    
+    li{
+      padding-bottom: 24px;
+      a{
+        color: #000;
+      }
+      a:hover{
+        color: #2A8356;
+        border-left: 3px solid #2A8356;
+      }
+    }
+    span{
+      margin-right: 16px;
+      margin-left: 32px;
+    }
+  }
+}
