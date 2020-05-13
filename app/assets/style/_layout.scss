@@ -1,11 +1,13 @@
 
-.l_aside{
+.l_nav{
   background: #EDF4EE;
-  width: 23.125%;
-  height: 100%;
+  width: 296px;
   padding: 0;
   padding-top: 32px;
   font-weight: bold;
+  position: fixed;
+  top: 0;
+  bottom: 0;
   .logo_img{
     background: url(../images/logo.svg) no-repeat;
     @include hide-text;
@@ -32,7 +34,7 @@
   }
 }
 .account{
-  padding: 97% 32px 32px 32px;
+  padding: 0 32px 32px 32px;
   img{
     width: 40px;
     height: 40px;

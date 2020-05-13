@@ -1,6 +1,8 @@
 main{
-  width: 76.875%;
+  margin-left: 296px;
+  width: 100%;
 }
+
 .main_header{
   padding: 32px;
   font-weight: bold;
@@ -12,9 +14,6 @@ main{
     line-height: 33px;
     padding-right: 48px;
   }
-  &_select span{
-    color: #2A8356;
-  }
   .search{
     margin-right: 26px;
     input{
@@ -22,5 +21,46 @@ main{
       padding-left: 5px;
       display: none;
     }
+  }
+}
+.dropdown{
+  display: inline-block;
+}
+.dropdown-toggle{
+  font-weight: bold;
+  span{
+    color: #2A8356;
+    margin-left: 8px;
+  }
+  &::after{
+    display: none;
+  }
+}
+.main_content{
+  margin: 32px;
+  margin-top: 12px;
+  .dropdown-toggle{
+    padding: 6px 0;
+  }
+}
+.list-group-item{
+  border-color: #CDDDCD;
+  color: #000;
+  padding: 12px;
+  div{
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .project_title{
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .project_user_name{
+    color: #0000009A;
+  }
+  &.active{
+    color: #000;
+    background: #EDF4EE;
+    border-color: #CDDDCD;
   }
 }

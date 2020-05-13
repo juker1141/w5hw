@@ -6,69 +6,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title><%- title %></title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
-<body class="d-flex">
-  <aside class="l_aside">
-    <a href="index.html">
-      <h1 class="logo_img">answer</h1>
-    </a>
-    <ul class="l_menu p-0">
-      <li>
-        <a href="#" class="d-flex align-items-center">
-          <span class="material-icons">insert_chart</span>
-          Dashboard
+<body>
+  <div class="wrap d-flex">
+    <nav class="l_nav d-flex flex-column justify-content-between">
+      <section class="l_nav_header">
+        <a href="index.html">
+          <h1 class="logo_img">answer</h1>
         </a>
-      </li>
-      <li>
-        <a href="#" class="d-flex align-items-center">
-          <span class="material-icons">forum</span>
-          Question
-        </a>
-      </li>
-      <li>
-        <a href="#" class="d-flex align-items-center">
-          <span class="material-icons">assignment</span>
-          Assignment
-        </a>
-      </li>
-      <li>
-        <a href="#" class="d-flex align-items-center">
-          <span class="material-icons">video_library</span>
-          Course
-        </a>
-      </li>
-      <li>
-        <a href="#" class="d-flex align-items-center">
-          <span class="material-icons">supervisor_account</span>
-          Admin
-        </a>
-      </li>
-      <li>
-        <a href="#" class="d-flex align-items-center">
-          <span class="material-icons">settings</span>
-          Settings
-        </a>
-      </li>
-    </ul>
-    <section class="account d-flex align-items-center mt-auto">
-      <img src="assets/images/andychen.jfif" alt="andychen" class="rounded-circle">
-      <div class="account_user">
-        <p class="account_user_name">
-          Andy Chen
-        </p>
-        <p class="account_user_email">
-          andy0401@mail.com
-        </p>
-      </div>
-    </section>
-  </aside>
+        <ul class="l_menu p-0">
+          <li>
+            <a href="#" class="d-flex align-items-center">
+              <span class="material-icons">insert_chart</span>
+              Dashboard
+            </a>
+          </li>
+          <li>
+            <a href="#" class="d-flex align-items-center">
+              <span class="material-icons">forum</span>
+              Question
+            </a>
+          </li>
+          <li>
+            <a href="#" class="d-flex align-items-center">
+              <span class="material-icons">assignment</span>
+              Assignment
+            </a>
+          </li>
+          <li>
+            <a href="#" class="d-flex align-items-center">
+              <span class="material-icons">video_library</span>
+              Course
+            </a>
+          </li>
+          <li>
+            <a href="#" class="d-flex align-items-center">
+              <span class="material-icons">supervisor_account</span>
+              Admin
+            </a>
+          </li>
+          <li>
+            <a href="#" class="d-flex align-items-center">
+              <span class="material-icons">settings</span>
+              Settings
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="account d-flex align-items-center mt-auto">
+        <img src="assets/images/andychen.jfif" alt="andychen" class="rounded-circle">
+        <div class="account_user">
+          <p class="account_user_name">
+            Andy Chen
+          </p>
+          <p class="account_user_email">
+            andy0401@mail.com
+          </p>
+        </div>
+      </section>
+    </nav>
 
-  <%- contents %>
+    <%- contents %>
+  </div>
+
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
