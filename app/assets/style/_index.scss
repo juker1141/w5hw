@@ -51,16 +51,67 @@ main{
     font-size: 14px;
     line-height: 24px;
   }
-  .project_title{
-    font-size: 16px;
-    font-weight: bold;
-  }
-  .project_user_name{
-    color: #0000009A;
-  }
   &.active{
     color: #000;
     background: #EDF4EE;
     border-color: #CDDDCD;
   }
+}
+
+.project_title{
+  font-size: 16px;
+  font-weight: bold;
+}
+.project_user_name{
+  color: #0000009A;
+}
+
+.tab-content{
+  margin-top: -24px;
+}
+.comment_num{
+  font-size: 12px;
+  line-height: 24px;
+  color: #707070;
+  text-align: right;
+  margin-right: 1px;
+}
+.card{
+  border-color: #CDDDCD;
+}
+.card-header{
+  background: #EDF4EE;
+}
+.project_moreBtn{
+  color: #000;
+  &:hover{
+    color: #2A8356;
+  }
+}
+.media_img_1{
+  background: url(../images/emilywang.jfif) no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+}
+.media_img_2{
+  background: url(../images/andychen.jfif) no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+}
+.account_uptime{
+  font-size: 12px;
+  line-height: 24px;
+}
+.mb-2-5{
+  margin-bottom: .75rem !important;
+}
+.media_body_main{
+  font-size: 14px;
+  line-height: 21px;
 }
