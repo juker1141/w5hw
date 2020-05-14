@@ -22,25 +22,35 @@ main{
       display: none;
     }
   }
+  .dropdown-toggle{
+    padding: 6px 0;
+    font-weight: bold;
+    &::after{
+      display: none;
+    }
+    span{
+      color: #2A8356;
+      margin-left: 8px;
+    }
+  }
 }
+
 .dropdown{
   display: inline-block;
-}
-.dropdown-toggle{
-  font-weight: bold;
-  span{
-    color: #2A8356;
-    margin-left: 8px;
-  }
-  &::after{
-    display: none;
-  }
 }
 .main_content{
   margin: 32px;
   margin-top: 12px;
   .dropdown-toggle{
     padding: 6px 0;
+    font-weight: bold;
+    span{
+      color: #2A8356;
+      margin-left: 8px;
+    }
+    &::after{
+      display: none;
+    }
   }
 }
 .list-group-item{
@@ -107,6 +117,7 @@ main{
 .account_uptime{
   font-size: 12px;
   line-height: 24px;
+  color: #0000009A;
 }
 .mb-2-5{
   margin-bottom: .75rem !important;
@@ -114,4 +125,85 @@ main{
 .media_body_main{
   font-size: 14px;
   line-height: 21px;
+  margin-right: 12px;
+  .btn{
+    background: #EDF4EE;
+    border: 1px #CDDDCD solid;
+    margin-top: 16px;
+    font-weight: bold;
+    width: 177px;
+    span{
+      margin-right: 8px;
+    }
+  }
+}
+.star-edit_btn span{
+  color: #000;
+  &:hover{
+    color: #2A8356;
+  }
+}
+.edit_btn{
+  margin-left: 24px;
+  margin-right: 12px;
+}
+hr{
+  margin-left: 48px;
+  margin-right: 12px;
+  background: #CDDDCD;
+}
+code{
+  background: #EDF4EE;
+  color: #2A8356;
+  padding: 1px 5px;
+}
+.suggest_tips{
+  list-style: disc;
+  li{
+    margin-left: 28px;
+  }
+}
+.lastnext_btn span{
+  color: #000;
+  &:hover{
+    color: #2A8356;
+  }
+  &:nth-child(1){
+    margin-right: 23px;
+  }
+}
+.btn_mark{
+  border: #2A8356 1px solid;
+  color: #2A8356;
+  font-weight: bold;
+  padding: 8px 32px;
+  &:hover{
+    background: #EDF4EE;
+    color: #2A8356;
+  }
+}
+.btn_reply{
+  background: #2A8356;
+  color: #fff;
+  padding: 8px 32px;
+  &:hover{
+    background: darken(#2A8356, 10%);
+    color: #fff;
+  }
+}
+.card_reply{
+  bottom: 0;
+  z-index: 1;
+  width: 0;
+  height: 0;
+  .dropdown-toggle::after {
+    display: inline-block;
+    margin-left: .75em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+  }
 }
