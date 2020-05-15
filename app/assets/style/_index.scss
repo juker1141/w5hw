@@ -194,8 +194,11 @@ code{
 .card_reply{
   bottom: 0;
   z-index: 1;
-  width: 0;
-  height: 0;
+  width: 100%;
+  height: 319px;
+  .dropdown{
+    margin-right: 24px;
+  }
   .dropdown-toggle::after {
     display: inline-block;
     margin-left: .75em;
@@ -205,5 +208,31 @@ code{
     border-right: .3em solid transparent;
     border-bottom: 0;
     border-left: .3em solid transparent;
+  }
+  span{
+    margin-right: 24px;
+  }
+  .card-body_form{
+    textarea{
+      border: none;
+      resize : none;
+      width: 100%;
+      height: 175px;
+      font-size: 16px;
+      
+    }
+    ::placeholder { /* CSS 3 標準 */
+      color: #00000062;
+    }
+    ::-webkit-input-placeholder { /* Chrome, Safari */
+      color: #00000062;
+    }
+    :-ms-input-placeholder { /* IE 10+ */
+      color: #00000062;
+    }
+    ::-moz-placeholder { /* Firefox 19+ */
+      color: #00000062;
+      opacity: 1;
+    }
   }
 }
