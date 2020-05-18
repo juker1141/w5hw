@@ -1,5 +1,4 @@
-.l_nav{
-  background: #EDF4EE;
+.l_nav {
   width: 296px;
   padding: 0;
   padding-top: 32px;
@@ -7,34 +6,34 @@
   position: fixed;
   top: 0;
   bottom: 0;
-  .logo_img{
+  .logo_img {
     background: url(../images/logo.svg) no-repeat;
     @include hide-text;
     width: 151px;
     height: 40px;
     margin: 0 32px 32px 32px;
   }
-  .l_menu{
+  .l_menu {
     list-style: none;
-    li{
+    li {
       padding-bottom: 24px;
-      a{
+      a {
         color: #000;
       }
-      a:hover{
-        color: #2A8356;
-        border-left: 3px solid #2A8356;
+      a:hover {
+        color: #2a8356;
+        border-left: 3px solid #2a8356;
       }
     }
-    span{
+    span {
       margin-right: 16px;
       margin-left: 32px;
     }
   }
 }
-.account{
+.account {
   padding: 0 32px 32px 32px;
-  .account_img{
+  .account_img {
     background: url(../images/andychen.jfif) no-repeat;
     background-size: cover;
     border-radius: 50%;
@@ -42,13 +41,12 @@
     height: 40px;
     margin-right: 16px;
   }
-  &_user_name{
+  &_user_name {
     font-weight: bold;
   }
-  &_user_email{
+  &_user_email {
     font-size: 14px;
     line-height: 24px;
-    color: #0000009A;
     font-weight: normal;
   }
 }
