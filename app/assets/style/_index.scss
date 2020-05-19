@@ -73,10 +73,10 @@ main {
 .card {
   border-color: #cdddcd;
 }
-.projectCard_name{
+.projectCard_name {
   font-size: 12px;
 }
-.projectCard_title{
+.projectCard_title {
   font-size: 16px;
   font-weight: bold;
 }
@@ -147,7 +147,6 @@ code {
   }
 }
 .btn-outline-primary {
-  font-weight: bold;
   padding: 8px 32px;
   &:hover {
     background: #edf4ee;
@@ -208,7 +207,7 @@ code {
       opacity: 1;
     }
   }
-  a span:hover{
-  color: #2a8356;
+  a span:hover {
+    color: #2a8356;
   }
 }
