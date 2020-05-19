@@ -24,8 +24,8 @@ current: index
       </div>
     </div>
     <div class="main_header_btn d-flex flex-row">
+      <input type="text" placeholder="search" class="mr-3 pl-2 search_input">
       <a href="#" class="search d-flex align-items-center">
-        <input type="text" placeholder="search">
         <span class="material-icons">search</span>
       </a>
       <a href="#" class="notification d-flex align-items-center">
@@ -55,28 +55,28 @@ current: index
             <div class="project_name w-50">Chapter Assignment 2</div>
             <div class="project_uptime">4 hrs ago</div>
             <div class="project_title text-truncate w-50">Please check this file for me, thanks!</div>
-            <div class="project_user_name">Emily Wang</div>
+            <div class="text-fontRemark">Emily Wang</div>
           </a>
           <a class="list-group-item list-group-item-action d-flex flex-wrap justify-content-between"
             id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">
             <div class="project_name w-50">Chapter Assignment 1</div>
             <div class="project_uptime">12 hrs ago</div>
             <div class="project_title text-truncate w-50">My Homework</div>
-            <div class="project_user_name">David Xu</div>
+            <div class="text-fontRemark">David Xu</div>
           </a>
           <a class="list-group-item list-group-item-action d-flex flex-wrap justify-content-between"
             id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">
             <div class="project_name w-50">Final Assignment</div>
             <div class="project_uptime">18 hrs ago</div>
             <div class="project_title text-truncate w-50">Have a problem with this…</div>
-            <div class="project_user_name">Tony Wei</div>
+            <div class="text-fontRemark">Tony Wei</div>
           </a>
           <a class="list-group-item list-group-item-action d-flex flex-wrap justify-content-between"
             id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">
             <div class="project_name w-50">Final Assignment</div>
             <div class="project_uptime">19 hrs ago</div>
             <div class="project_title text-truncate w-50">Did I do it right?</div>
-            <div class="project_user_name">Christina Lin</div>
+            <div class="text-fontRemark">Christina Lin</div>
           </a>
         </div>
       </div>
@@ -85,10 +85,10 @@ current: index
           <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
             <div class="comment_num">2 comments</div>
             <div class="card">
-              <h5 class="card-header d-flex justify-content-between align-items-center">
+              <h5 class="card-header bg-secondary d-flex justify-content-between align-items-center">
                 <div class="card_header_flex_block">
-                  <div class="project_name">Chapter Assignment 2</div>
-                  <div class="project_title">Please check this file for me, thanks!</div>
+                  <div class="projectCard_name">Chapter Assignment 2</div>
+                  <div class="projectCard_title">Please check this file for me, thanks!</div>
                 </div>
                 <a href="#" class="d-flex align-items-center project_moreBtn">
                   <span class="material-icons">more_vert</span>
@@ -99,42 +99,44 @@ current: index
                   <li class="media">
                     <div class="media_img_1"></div>
                     <div class="media-body">
-                      <h5 class="mt-0 mb-2-5">
+                      <h5 class="mt-0 mb-12">
                         <p class="account_user_name">Emily Wang</p>
-                        <p class="account_uptime">10:38 AM (4 hours ago)</p>
+                        <p class="account_uptime text-fontRemark">10:38 AM (4 hours ago)</p>
                       </h5>
                       <div class="media_body_main">
                         Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the
-                        following code the height of the <code>div</code> is bigger than the height of the
-                        <code>img</code> ? There is a gap below
+                        following code the height of the <code class="bg-secondary text-primary">div</code> is bigger
+                        than the height of the
+                        <code class="bg-secondary text-primary">img</code> ? There is a gap below
                         the image, but it doesn’t seems to be a padding/margin. What is the gap or extra space below
                         image?
-                        <a class="btn d-flex align-items-center" href="index.html" role="button" download="index.html">
-                          <span class="material-icons">attach_file</span>
+                        <a class="btn bg-secondary d-flex align-items-center" href="index.html" role="button"
+                          download="index.html">
+                          <span class="material-icons mr-2">attach_file</span>
                           HW-2-David.zip
                         </a>
                       </div>
                     </div>
                   </li>
-                  <hr>
+                  <hr class="bg-third mr-12 ml-5">
                   <li class="media my-4">
                     <div class="media_img_2"></div>
                     <div class="media-body">
-                      <h5 class="mt-0 mb-2-5 d-flex justify-content-between align-items-start">
+                      <h5 class="mt-0 mb-12 d-flex justify-content-between align-items-start">
                         <div class="account_information">
                           <p class="account_user_name">Andy Chen (You)</p>
-                          <p class="account_uptime">13:24 AM (1 hours ago)</p>
+                          <p class="account_uptime text-fontRemark">13:24 AM (1 hours ago)</p>
                         </div>
                         <div class="star-edit_btn">
                           <a href="#">
                             <span class="material-icons">star_border</span>
                           </a>
                           <a href="#">
-                            <span class="material-icons edit_btn">edit</span>
+                            <span class="material-icons edit_btn mr-12 ml-4">edit</span>
                           </a>
                         </div>
                       </h5>
-                      <div class="media_body_main">
+                      <div class="media_body_main" bg-secondary>
                         Hi Emily, by default, an image is rendered inline, like a letter so it sits on the same line
                         that a, b, c and d sit on. There is space below that line for the descenders you find on letters
                         like g, j, p and q. <br><br>
@@ -142,11 +144,12 @@ current: index
                         <br>
                         <ul class="suggest_tips">
                           <li>
-                            adjust the <code>vertical-align</code> of the image to position it elsewhere (e.g. the
-                            <code>middle</code> ).
+                            adjust the <code class="bg-secondary text-primary">vertical-align</code> of the image to
+                            position it elsewhere (e.g. the
+                            <code class="bg-secondary text-primary">middle</code> ).
                           </li>
                           <li>
-                            change the <code>display</code> so it isn’t inline.
+                            change the <code class="bg-secondary text-primary">display</code> so it isn’t inline.
                           </li>
                         </ul>
                       </div>
@@ -155,10 +158,10 @@ current: index
               </div>
             </div>
             <div class="card card_reply position-absolute">
-              <h5 class="card-header d-flex align-items-center">
+              <h5 class="card-header bg-secondary d-flex align-items-center">
                 <div class="dropdown">
-                  <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
                     Body Text
                   </a>
 
@@ -168,35 +171,469 @@ current: index
                     <a class="dropdown-item" href="#">Something else here</a>
                   </div>
                 </div>
-                <span class="material-icons">
-                  format_bold
-                </span>
-                <span class="material-icons">
-                  format_italic
-                </span>
-                <span class="material-icons">
-                  format_list_bulleted
-                </span>
-                <span class="material-icons">
-                  format_list_numbered
-                </span>
-                <span class="material-icons">
-                  photo
-                </span>
-                <span class="material-icons">
-                  link
-                </span>
-                <span class="material-icons">
-                  code
-                </span>
+                <a href="#" class="text-normal text-normal-hover d-flex align-content-center">
+                  <span class="material-icons">
+                    format_bold
+                  </span>
+                </a>
+                <a href="#" class="text-normal text-normal-hover d-flex align-content-center">
+                  <span class="material-icons">
+                    format_italic
+                  </span>
+                </a>
+                <a href="#" class="text-normal text-normal-hover d-flex align-content-center">
+                  <span class="material-icons">
+                    format_list_bulleted
+                  </span>
+                </a>
+                <a href="#" class="text-normal text-normal-hover d-flex align-content-center">
+                  <span class="material-icons">
+                    format_list_numbered
+                  </span>
+                </a>
+                <a href="#" class="text-normal text-normal-hover d-flex align-content-center">
+                  <span class="material-icons">
+                    photo
+                  </span>
+                </a>
+                <a href="#" class="text-normal text-normal-hover d-flex align-content-center">
+                  <span class="material-icons">
+                    link
+                  </span>
+                </a>
+                <a href="#" class="text-normal text-normal-hover d-flex align-content-center">
+                  <span class="material-icons">
+                    code
+                  </span>
+                </a>
               </h5>
               <div class="card-body">
                 <form action="index.html" class="card-body_form">
                   <textarea name="answer" id="answer" placeholder="Reply an answer…"></textarea>
                 </form>
-                <div class="btn_flex_block">
-                  <button type="button" class="btn btn_secondary">Cancel</button>
-                  <button class="btn btn_reply ml-3" type="submit">Reply</button>
+                <div class="btn_flex_block d-flex justify-content-end">
+                  <button type="button" class="btn btn-outline-primary btn_reply-hide">Cancel</button>
+                  <button class="btn btn-primary btn_reply ml-3" type="submit">Reply</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+            <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+              <div class="comment_num">2 comments</div>
+              <div class="card">
+                <h5 class="card-header bg-secondary d-flex justify-content-between align-items-center">
+                  <div class="card_header_flex_block">
+                    <div class="projectCard_name">Chapter Assignment 2</div>
+                    <div class="projectCard_title">Please check this file for me, thanks!</div>
+                  </div>
+                  <a href="#" class="d-flex align-items-center project_moreBtn">
+                    <span class="material-icons">more_vert</span>
+                  </a>
+                </h5>
+                <div class="card-body">
+                  <ul class="list-unstyled">
+                    <li class="media">
+                      <div class="media_img_1"></div>
+                      <div class="media-body">
+                        <h5 class="mt-0 mb-12">
+                          <p class="account_user_name">Emily Wang</p>
+                          <p class="account_uptime text-fontRemark">10:38 AM (4 hours ago)</p>
+                        </h5>
+                        <div class="media_body_main" bg-secondary>
+                          Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in
+                          the
+                          following code the height of the <code class="bg-secondary text-primary">div</code> is bigger
+                          than the height of the
+                          <code class="bg-secondary text-primary">img</code> ? There is a gap below
+                          the image, but it doesn’t seems to be a padding/margin. What is the gap or extra space below
+                          image?
+                          <a class="btn bg-secondary d-flex align-items-center" href="index.html" role="button"
+                            download="index.html">
+                            <span class="material-icons mr-2">attach_file</span>
+                            HW-2-David.zip
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <hr class="bg-third mr-12 ml-5">
+                    <li class="media my-4">
+                      <div class="media_img_2"></div>
+                      <div class="media-body">
+                        <h5 class="mt-0 mb-12 d-flex justify-content-between align-items-start">
+                          <div class="account_information">
+                            <p class="account_user_name">Andy Chen (You)</p>
+                            <p class="account_uptime text-fontRemark">13:24 AM (1 hours ago)</p>
+                          </div>
+                          <div class="star-edit_btn">
+                            <a href="#">
+                              <span class="material-icons">star_border</span>
+                            </a>
+                            <a href="#">
+                              <span class="material-icons edit_btn mr-12 ml-4">edit</span>
+                            </a>
+                          </div>
+                        </h5>
+                        <div class="media_body_main" bg-secondary>
+                          Hi Emily, by default, an image is rendered inline, like a letter so it sits on the same line
+                          that a, b, c and d sit on. There is space below that line for the descenders you find on
+                          letters
+                          like g, j, p and q. <br><br>
+                          <p>You can:</p>
+                          <br>
+                          <ul class="suggest_tips">
+                            <li>
+                              adjust the <code class="bg-secondary text-primary">vertical-align</code> of the image to
+                              position it elsewhere (e.g. the
+                              <code class="bg-secondary text-primary">middle</code> ).
+                            </li>
+                            <li>
+                              change the <code class="bg-secondary text-primary">display</code> so it isn’t inline.
+                            </li>
+                          </ul>
+                        </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card card_reply position-absolute">
+                <h5 class="card-header bg-secondary d-flex align-items-center">
+                  <div class="dropdown">
+                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
+                      Body Text
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                  <a href="#" class="text-normal text-normal-hover d-flex align-content-center">
+                    <span class="material-icons">
+                      format_bold
+                    </span>
+                  </a>
+                  <a href="#" class="text-normal text-normal-hover d-flex align-content-center">
+                    <span class="material-icons">
+                      format_italic
+                    </span>
+                  </a>
+                  <a href="#" class="text-normal text-normal-hover d-flex align-content-center">
+                    <span class="material-icons">
+                      format_list_bulleted
+                    </span>
+                  </a>
+                  <a href="#" class="text-normal text-normal-hover d-flex align-content-center">
+                    <span class="material-icons">
+                      format_list_numbered
+                    </span>
+                  </a>
+                  <a href="#" class="text-normal text-normal-hover d-flex align-content-center">
+                    <span class="material-icons">
+                      photo
+                    </span>
+                  </a>
+                  <a href="#" class="text-normal text-normal-hover d-flex align-content-center">
+                    <span class="material-icons">
+                      link
+                    </span>
+                  </a>
+                  <a href="#" class="text-normal text-normal-hover d-flex align-content-center">
+                    <span class="material-icons">
+                      code
+                    </span>
+                  </a>
+                </h5>
+                <div class="card-body">
+                  <form action="index.html" class="card-body_form">
+                    <textarea name="answer" id="answer" placeholder="Reply an answer…"></textarea>
+                  </form>
+                  <div class="btn_flex_block d-flex justify-content-end">
+                    <button type="button" class="btn btn-outline-primary btn_reply-hide">Cancel</button>
+                    <button class="btn btn-primary btn_reply ml-3" type="submit">Reply</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+            <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+              <div class="comment_num">2 comments</div>
+              <div class="card">
+                <h5 class="card-header bg-secondary d-flex justify-content-between align-items-center">
+                  <div class="card_header_flex_block">
+                    <div class="projectCard_name">Chapter Assignment 2</div>
+                    <div class="projectCard_title">Please check this file for me, thanks!</div>
+                  </div>
+                  <a href="#" class="d-flex align-items-center project_moreBtn">
+                    <span class="material-icons">more_vert</span>
+                  </a>
+                </h5>
+                <div class="card-body">
+                  <ul class="list-unstyled">
+                    <li class="media">
+                      <div class="media_img_1"></div>
+                      <div class="media-body">
+                        <h5 class="mt-0 mb-12">
+                          <p class="account_user_name">Emily Wang</p>
+                          <p class="account_uptime text-fontRemark">10:38 AM (4 hours ago)</p>
+                        </h5>
+                        <div class="media_body_main" bg-secondary>
+                          Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in
+                          the
+                          following code the height of the <code class="bg-secondary text-primary">div</code> is bigger
+                          than the height of the
+                          <code class="bg-secondary text-primary">img</code> ? There is a gap below
+                          the image, but it doesn’t seems to be a padding/margin. What is the gap or extra space below
+                          image?
+                          <a class="btn bg-secondary d-flex align-items-center" href="index.html" role="button"
+                            download="index.html">
+                            <span class="material-icons mr-2">attach_file</span>
+                            HW-2-David.zip
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <hr class="bg-third mr-12 ml-5">
+                    <li class="media my-4">
+                      <div class="media_img_2"></div>
+                      <div class="media-body">
+                        <h5 class="mt-0 mb-12 d-flex justify-content-between align-items-start">
+                          <div class="account_information">
+                            <p class="account_user_name">Andy Chen (You)</p>
+                            <p class="account_uptime text-fontRemark">13:24 AM (1 hours ago)</p>
+                          </div>
+                          <div class="star-edit_btn">
+                            <a href="#">
+                              <span class="material-icons">star_border</span>
+                            </a>
+                            <a href="#">
+                              <span class="material-icons edit_btn mr-12 ml-4">edit</span>
+                            </a>
+                          </div>
+                        </h5>
+                        <div class="media_body_main" bg-secondary>
+                          Hi Emily, by default, an image is rendered inline, like a letter so it sits on the same line
+                          that a, b, c and d sit on. There is space below that line for the descenders you find on
+                          letters
+                          like g, j, p and q. <br><br>
+                          <p>You can:</p>
+                          <br>
+                          <ul class="suggest_tips">
+                            <li>
+                              adjust the <code class="bg-secondary text-primary">vertical-align</code> of the image to
+                              position it elsewhere (e.g. the
+                              <code class="bg-secondary text-primary">middle</code> ).
+                            </li>
+                            <li>
+                              change the <code class="bg-secondary text-primary">display</code> so it isn’t inline.
+                            </li>
+                          </ul>
+                        </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card card_reply position-absolute">
+                <h5 class="card-header bg-secondary d-flex align-items-center">
+                  <div class="dropdown">
+                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
+                      Body Text
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                  <a href="#" class="text-normal text-normal-hover d-flex align-content-center">
+                    <span class="material-icons">
+                      format_bold
+                    </span>
+                  </a>
+                  <a href="#" class="text-normal text-normal-hover d-flex align-content-center">
+                    <span class="material-icons">
+                      format_italic
+                    </span>
+                  </a>
+                  <a href="#" class="text-normal text-normal-hover d-flex align-content-center">
+                    <span class="material-icons">
+                      format_list_bulleted
+                    </span>
+                  </a>
+                  <a href="#" class="text-normal text-normal-hover d-flex align-content-center">
+                    <span class="material-icons">
+                      format_list_numbered
+                    </span>
+                  </a>
+                  <a href="#" class="text-normal text-normal-hover d-flex align-content-center">
+                    <span class="material-icons">
+                      photo
+                    </span>
+                  </a>
+                  <a href="#" class="text-normal text-normal-hover d-flex align-content-center">
+                    <span class="material-icons">
+                      link
+                    </span>
+                  </a>
+                  <a href="#" class="text-normal text-normal-hover d-flex align-content-center">
+                    <span class="material-icons">
+                      code
+                    </span>
+                  </a>
+                </h5>
+                <div class="card-body">
+                  <form action="index.html" class="card-body_form">
+                    <textarea name="answer" id="answer" placeholder="Reply an answer…"></textarea>
+                  </form>
+                  <div class="btn_flex_block d-flex justify-content-end">
+                    <button type="button" class="btn btn-outline-primary btn_reply-hide">Cancel</button>
+                    <button class="btn btn-primary btn_reply ml-3" type="submit">Reply</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+            <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+              <div class="comment_num">2 comments</div>
+              <div class="card">
+                <h5 class="card-header bg-secondary d-flex justify-content-between align-items-center">
+                  <div class="card_header_flex_block">
+                    <div class="projectCard_name">Chapter Assignment 2</div>
+                    <div class="projectCard_title">Please check this file for me, thanks!</div>
+                  </div>
+                  <a href="#" class="d-flex align-items-center project_moreBtn">
+                    <span class="material-icons">more_vert</span>
+                  </a>
+                </h5>
+                <div class="card-body">
+                  <ul class="list-unstyled">
+                    <li class="media">
+                      <div class="media_img_1"></div>
+                      <div class="media-body">
+                        <h5 class="mt-0 mb-12">
+                          <p class="account_user_name">Emily Wang</p>
+                          <p class="account_uptime text-fontRemark">10:38 AM (4 hours ago)</p>
+                        </h5>
+                        <div class="media_body_main" bg-secondary>
+                          Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in
+                          the
+                          following code the height of the <code class="bg-secondary text-primary">div</code> is bigger
+                          than the height of the
+                          <code class="bg-secondary text-primary">img</code> ? There is a gap below
+                          the image, but it doesn’t seems to be a padding/margin. What is the gap or extra space below
+                          image?
+                          <a class="btn bg-secondary d-flex align-items-center" href="index.html" role="button"
+                            download="index.html">
+                            <span class="material-icons mr-2">attach_file</span>
+                            HW-2-David.zip
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <hr class="bg-third mr-12 ml-5">
+                    <li class="media my-4">
+                      <div class="media_img_2"></div>
+                      <div class="media-body">
+                        <h5 class="mt-0 mb-12 d-flex justify-content-between align-items-start">
+                          <div class="account_information">
+                            <p class="account_user_name">Andy Chen (You)</p>
+                            <p class="account_uptime text-fontRemark">13:24 AM (1 hours ago)</p>
+                          </div>
+                          <div class="star-edit_btn">
+                            <a href="#">
+                              <span class="material-icons">star_border</span>
+                            </a>
+                            <a href="#">
+                              <span class="material-icons edit_btn mr-12 ml-4">edit</span>
+                            </a>
+                          </div>
+                        </h5>
+                        <div class="media_body_main" bg-secondary>
+                          Hi Emily, by default, an image is rendered inline, like a letter so it sits on the same line
+                          that a, b, c and d sit on. There is space below that line for the descenders you find on
+                          letters
+                          like g, j, p and q. <br><br>
+                          <p>You can:</p>
+                          <br>
+                          <ul class="suggest_tips">
+                            <li>
+                              adjust the <code class="bg-secondary text-primary">vertical-align</code> of the image to
+                              position it elsewhere (e.g. the
+                              <code class="bg-secondary text-primary">middle</code> ).
+                            </li>
+                            <li>
+                              change the <code class="bg-secondary text-primary">display</code> so it isn’t inline.
+                            </li>
+                          </ul>
+                        </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card card_reply position-absolute">
+                <h5 class="card-header bg-secondary d-flex align-items-center">
+                  <div class="dropdown">
+                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
+                      Body Text
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                  <a href="#" class="text-normal text-normal-hover d-flex align-content-center">
+                    <span class="material-icons">
+                      format_bold
+                    </span>
+                  </a>
+                  <a href="#" class="text-normal text-normal-hover d-flex align-content-center">
+                    <span class="material-icons">
+                      format_italic
+                    </span>
+                  </a>
+                  <a href="#" class="text-normal text-normal-hover d-flex align-content-center">
+                    <span class="material-icons">
+                      format_list_bulleted
+                    </span>
+                  </a>
+                  <a href="#" class="text-normal text-normal-hover d-flex align-content-center">
+                    <span class="material-icons">
+                      format_list_numbered
+                    </span>
+                  </a>
+                  <a href="#" class="text-normal text-normal-hover d-flex align-content-center">
+                    <span class="material-icons">
+                      photo
+                    </span>
+                  </a>
+                  <a href="#" class="text-normal text-normal-hover d-flex align-content-center">
+                    <span class="material-icons">
+                      link
+                    </span>
+                  </a>
+                  <a href="#" class="text-normal text-normal-hover d-flex align-content-center">
+                    <span class="material-icons">
+                      code
+                    </span>
+                  </a>
+                </h5>
+                <div class="card-body">
+                  <form action="index.html" class="card-body_form">
+                    <textarea name="answer" id="answer" placeholder="Reply an answer…"></textarea>
+                  </form>
+                  <div class="btn_flex_block d-flex justify-content-end">
+                    <button type="button" class="btn btn-outline-primary btn_reply-hide">Cancel</button>
+                    <button class="btn btn-primary btn_reply ml-3" type="submit">Reply</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -211,13 +648,10 @@ current: index
               </a>
             </div>
             <div class="btn_flex_block">
-              <button type="button" class="btn btn_secondary">Mark as read</button>
-              <button class="btn btn_reply btn_reply-show ml-3" type="submit">Reply</button>
+              <button type="button" class="btn btn-outline-primary">Mark as read</button>
+              <button class="btn btn-primary btn_reply btn_reply-show ml-3" type="submit">Reply</button>
             </div>
           </div>
-          <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...</div>
-          <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
-          <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
         </div>
       </div>
     </div>

@@ -16,11 +16,6 @@ main {
   }
   .search {
     margin-right: 26px;
-    input {
-      margin-right: 16px;
-      padding-left: 5px;
-      display: none;
-    }
   }
   .dropdown-toggle {
     padding: 6px 0;
@@ -64,9 +59,6 @@ main {
   font-size: 16px;
   font-weight: bold;
 }
-.project_user_name {
-  color: #0000009a;
-}
 
 .tab-content {
   margin-top: -24px;
@@ -81,8 +73,12 @@ main {
 .card {
   border-color: #cdddcd;
 }
-.card-header {
-  background: #edf4ee;
+.projectCard_name{
+  font-size: 12px;
+}
+.projectCard_title{
+  font-size: 16px;
+  font-weight: bold;
 }
 .project_moreBtn {
   color: #000;
@@ -109,24 +105,16 @@ main {
 .account_uptime {
   font-size: 12px;
   line-height: 24px;
-  color: #0000009a;
-}
-.mb-2-5 {
-  margin-bottom: 0.75rem !important;
 }
 .media_body_main {
   font-size: 14px;
   line-height: 21px;
   margin-right: 12px;
   .btn {
-    background: #edf4ee;
     border: 1px #cdddcd solid;
     margin-top: 16px;
     font-weight: bold;
     width: 177px;
-    span {
-      margin-right: 8px;
-    }
   }
 }
 .star-edit_btn span {
@@ -139,15 +127,9 @@ main {
   margin-left: 24px;
   margin-right: 12px;
 }
-hr {
-  margin-left: 48px;
-  margin-right: 12px;
-  background: #cdddcd;
-}
 code {
-  background: #edf4ee;
-  color: #2a8356;
   padding: 1px 5px;
+  font-size: 14px;
 }
 .suggest_tips {
   list-style: disc;
@@ -164,9 +146,7 @@ code {
     margin-right: 23px;
   }
 }
-.btn_secondary {
-  border: #2a8356 1px solid;
-  color: #2a8356;
+.btn-outline-primary {
   font-weight: bold;
   padding: 8px 32px;
   &:hover {
@@ -175,8 +155,6 @@ code {
   }
 }
 .btn_reply {
-  background: #2a8356;
-  color: #fff;
   padding: 8px 32px;
   &:hover {
     background: darken(#2a8356, 10%);
@@ -229,5 +207,8 @@ code {
       color: #00000062;
       opacity: 1;
     }
+  }
+  a span:hover{
+  color: #2a8356;
   }
 }
