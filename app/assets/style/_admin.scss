@@ -37,7 +37,7 @@
   background-repeat: no-repeat;
   background-position: center center;
 }
-.btn_add {
+.btn_add, .btn_update {
   padding: 8px 32px;
   &:hover {
     background: darken(#2a8356, 10%);
@@ -68,4 +68,51 @@
   height: 141px;
   background-size: cover;
   background-position: center center;
+}
+.admin_information{
+  width: 269px;
+  height: 141px;
+}
+.admin_name{
+  font-size: 24px;
+}
+.admin_mail{
+  font-size: 14px;
+  line-height: 24px;
+}
+.btn_adminEdit:hover {
+  background: darken(#2a8356, 10%);
+  color: #fff;
+}
+
+.adminOptions_btn{
+  transform: scaleY(1);
+  transition: all .1s;
+}
+.adminOptions_btn.active{
+  transform: scaleY(-1);
+  transition: all .1s;
+}
+
+.form-group{
+  .edit_admin_placeholder::placeholder {
+    /* CSS 3 標準 */
+    color: black;
+  }
+  .edit_admin_placeholder::-webkit-input-placeholder {
+    /* Chrome, Safari */
+    color: black;
+  }
+  .edit_admin_placeholder:-ms-input-placeholder {
+    /* IE 10+ */
+    color: black;
+  }
+  .edit_admin_placeholder::-moz-placeholder {
+    /* Firefox 19+ */
+    color: black;
+    opacity: 1;
+  }
+}
+.btn_disabled:hover{
+  background: #fff;
 }

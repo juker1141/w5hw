@@ -1,25 +1,20 @@
 main {
   margin-left: 296px;
-  width: 100%;
 }
 
 .main_header {
-  padding: 32px;
-  font-weight: bold;
   a {
     color: #000;
   }
   &_title {
     font-size: 24px;
     line-height: 33px;
-    padding-right: 48px;
   }
   .search {
     margin-right: 26px;
   }
   .dropdown-toggle {
     padding: 6px 0;
-    font-weight: bold;
     &::after {
       display: none;
     }
@@ -154,7 +149,6 @@ code {
   }
 }
 .btn_reply {
-  padding: 8px 32px;
   &:hover {
     background: darken(#2a8356, 10%);
     color: #fff;
