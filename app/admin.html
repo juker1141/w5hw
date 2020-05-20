@@ -376,21 +376,21 @@ current: index
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog" role="document">
+      <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            345
+          <div class="modal-body d-flex p-32">
+            <div class="admin_img mr-4"></div>
+            <ul>
+              <li class="admin_num">#1<button type="button" class="close" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button></li>
+              <li class="admin_title">Admin</li>
+              <li class="admin_name">Emir Wicks</li>
+              <li class="admin_mail">emir.wicks@mail.com</li>
+              <li class="admin_verifi">verified
+                <span class="material-icons text-primary ml-2">keyboard_arrow_down</span>
+              </li>
+            </ul>
           </div>
           <div class="modal-footer">
             <button
