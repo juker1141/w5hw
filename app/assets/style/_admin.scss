@@ -19,7 +19,7 @@
   display: none;
 }
 .agreeText:before {
-  content: ' ';
+  content: " ";
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -37,7 +37,8 @@
   background-repeat: no-repeat;
   background-position: center center;
 }
-.btn_add, .btn_update {
+.btn_add,
+.btn_update {
   padding: 8px 32px;
   &:hover {
     background: darken(#2a8356, 10%);
@@ -62,21 +63,21 @@
     color: #2a8356;
   }
 }
-.admin_img{
+.admin_img {
   background: url(../images/emirwicks.jfif) no-repeat;
   width: 141px;
   height: 141px;
   background-size: cover;
   background-position: center center;
 }
-.admin_information{
+.admin_information {
   width: 269px;
   height: 141px;
 }
-.admin_name{
+.admin_name {
   font-size: 24px;
 }
-.admin_mail{
+.admin_mail {
   font-size: 14px;
   line-height: 24px;
 }
@@ -85,16 +86,16 @@
   color: #fff;
 }
 
-.adminOptions_btn{
+.adminOptions_btn {
   transform: scaleY(1);
-  transition: all .1s;
+  transition: all 0.1s;
 }
-.adminOptions_btn.active{
+.adminOptions_btn.active {
   transform: scaleY(-1);
-  transition: all .1s;
+  transition: all 0.1s;
 }
 
-.form-group{
+.form-group {
   .edit_admin_placeholder::placeholder {
     /* CSS 3 標準 */
     color: black;
@@ -113,6 +114,6 @@
     opacity: 1;
   }
 }
-.btn_disabled:hover{
+.btn_disabled:hover {
   background: #fff;
 }
